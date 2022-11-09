@@ -1,0 +1,16 @@
+.title{
+    background-color: black;
+    color: aqua;
+    padding: 15px;
+}
+h2{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contexto{
+    background-color: rgb(235, 220, 220);
+    padding: 15px;
+}
