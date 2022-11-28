@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module'; //Importação do exportador routing.module
+import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { CubeComponent } from './components/cube/cube.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     PipesComponent,
     CubeComponent,
     TwoWayBindingComponent,
+    ItemDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, // Importa os arquivos importados
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
